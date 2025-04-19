@@ -138,6 +138,7 @@ button {
 
 :is(.field__input, .field__input::placeholder, .field__select) {
 	font: inherit;
+	color: var(--color-black);
 }
 
 .field__input::placeholder {
