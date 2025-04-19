@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Selora</title>
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<nav class="header__inner container">
+					<ul class="menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#">About the project</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">amenities</a>
+						</li>
+					</ul>
+					<a class="logo" href="#">
+						<img
+							src="./assets/images/logo.svg"
+							width="172"
+							height="64"
+							alt="White company logo selora"
+							loading="lazy"
+						/>
+					</a>
+					<ul class="header__menu menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#">points of interest</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">resgister</a>
+						</li>
+					</ul>
+					<button class="header__button-burger">
+						<img
+							src="./assets/icons/burger-menu.svg"
+							width="25"
+							height="23"
+							alt=""
+							loading="lazy"
+						/>
+					</button>
+				</nav>
+			</header>
+			<main class="main">
+				<section
+					class="hero"
+					style="
+						--backgroundImageUrl: url('./../images/hero-background.jpg');
+						--backgroundImageUrl2x: url('./../images/hero-background@2x.jpg');
+					"
+				>
+					<div class="hero__inner container">
+						<h1
+							class="hero__title title title--white title--center title--decoration-none"
+						>
+							An exclusive gated community of 30 ultra luxury designed villas in
+							Meydan Dubai
+						</h1>
+						<button
+							class="hero__button button button--white"
+							data-pop-up
+							type="button"
+						>
+							Register your interest
+						</button>
+						<dl class="hero__list">
+							<div class="hero__list-item">
+								<dd class="hero__list-value">AED 9.1M</dd>
+								<dt class="hero__list-label">Starting price</dt>
+							</div>
+							<div class="hero__list-item">
+								<dd class="hero__list-value">40/60</dd>
+								<dt class="hero__list-label">Payment plan</dt>
+							</div>
+						</dl>
+					</div>
+				</section>
+				<section class="info-designed section container">
+					<h2 class="info-designed__title title">
+						Elements of Nature, Artfully Designed
+					</h2>
+					<div class="info-designed__body">
+						<div class="info-designed__description">
+							<p>
+								Our world thrives on the subtle dance of contrasts—light and
+								shadow, movement and stillness, the rise and fall of natural
+								energy. True perfection in living spaces lies in harmonizing
+								these elements, where every detail, big or small, comes together
+								to create an intuitive and enriching environment. Location,
+								ambiance, and experience intertwine seamlessly, empowering
+								design that resonates with your innermost desires. At Selora, we
+								craft spaces where the essence of nature meets artful design,
+								offering a sanctuary that nurtures and sustains the soul.
+							</p>
+						</div>
+						<button class="button" type="button" data-pop-up>
+							Register your interest
+						</button>
+					</div>
+				</section>
+				<section class="villa container">
+					<header class="villa__header">
+						<div class="villa__item-info villa__item">
+							<h2 class="villa__name">LUZ VILLA</h2>
+							<div class="villa__data">
+								<ul class="villa__info">
+									<li class="villa__info-item">
+										Private Swimming Pool, Elevator and Landscaped Garden
+									</li>
+									<li class="villa__info-item">4 BEDROOMS</li>
+									<li class="villa__info-item">4 UNITS</li>
+									<li class="villa__info-item">4,677.23 sq.ft</li>
+								</ul>
+								<img
+									class="villa__icon"
+									src="./assets/icons/arrow-down-2.svg"
+									width="16"
+									height="28"
+									alt=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
+						<div class="villa__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img
+										class="villa__slide-image"
+										src="./assets/images/slide-1.jpg"
+										srcset="./assets/images/slide-1@2x.jpg 2x"
+										width="330"
+										height="419"
+										alt="villa 1"
+										loading="lazy"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="villa__slide-image"
+										src="./assets/images/slide-2.jpg"
+										srcset="./assets/images/slide-2@2x.jpg 2x"
+										width="330"
+										height="419"
+										alt="villa 2"
+										loading="lazy"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="villa__slide-image"
+										src="./assets/images/slide-3.jpg"
+										srcset="./assets/images/slide-3@2x.jpg 2x"
+										width="330"
+										height="419"
+										alt="villa 3"
+										loading="lazy"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="villa__slide-image"
+										src="./assets/images/slide-4.jpg"
+										srcset="./assets/images/slide-4@2x.jpg 2x"
+										width="330"
+										height="419"
+										alt="villa 4"
+										loading="lazy"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="villa__slide-image"
+										src="./assets/images/slide-3.jpg"
+										srcset="./assets/images/slide-3@2x.jpg 2x"
+										width="330"
+										height="419"
+										alt="villa 3"
+										loading="lazy"
+									/>
+								</div>
+							</div>
+							<button
+								class="villa__slider-button swiper-button-prev"
+								type="button"
+							>
+								<img
+									src="./assets/icons/arrow-left-white.svg"
+									width="28"
+									height="16"
+									alt=""
+									loading="lazy"
+								/>
+							</button>
+							<button
+								class="villa__slider-button swiper-button-next"
+								type="button"
+							>
+								<img
+									src="./assets/icons/arrow-right-white.svg"
+									width="28"
+									height="16"
+									alt=""
+									loading="lazy"
+								/>
+							</button>
+						</div>
+						<div class="villa__images">
+							<img
+								class="villa__image"
+								src="./assets/images/slide-1.jpg"
+								srcset="./assets/images/slide-1@2x.jpg 2x"
+								width="358"
+								height="437"
+								alt="villa 1"
+								loading="lazy"
+							/>
+							<img
+								class="villa__image"
+								src="./assets/images/slide-2.jpg"
+								srcset="./assets/images/slide-2@2x.jpg 2x"
+								width="358"
+								height="437"
+								alt="villa 2"
+								loading="lazy"
+							/>
+							<img
+								class="villa__image"
+								src="./assets/images/slide-3.jpg"
+								srcset="./assets/images/slide-3@2x.jpg 2x"
+								width="358"
+								height="437"
+								alt="villa 3"
+								loading="lazy"
+							/>
+							<img
+								class="villa__image"
+								src="./assets/images/slide-4.jpg"
+								srcset="./assets/images/slide-4@2x.jpg 2x"
+								width="358"
+								height="437"
+								alt="villa 4"
+								loading="lazy"
+							/>
+						</div>
+						<div class="villa__actions">
+							<button class="villa__button button" type="button" data-pop-up>
+								Download floorplan
+							</button>
+						</div>
+					</header>
+					<div class="villa__items">
+						<a class="villa__item" href="#">
+							<h2 class="villa__name">MERE VILLA</h2>
+							<div class="villa__data">
+								<ul class="villa__info">
+									<li class="villa__info-item">
+										Private Swimming Pool, Elevator and Landscaped Garden
+									</li>
+									<li class="villa__info-item">5 BEDROOMS</li>
+									<li class="villa__info-item">5 UNITS</li>
+									<li class="villa__info-item">4,677.23 sq.ft</li>
+								</ul>
+								<img
+									class="villa__icon"
+									src="./assets/icons/arrow-right.svg"
+									width="28"
+									height="16"
+									alt=""
+									loading="lazy"
+								/>
+							</div>
+						</a>
+						<a class="villa__item" href="#">
+							<h2 class="villa__name">VELA VILLA</h2>
+							<div class="villa__data">
+								<ul class="villa__info">
+									<li class="villa__info-item">
+										Private Swimming Pool, Elevator and Landscaped Garden
+									</li>
+									<li class="villa__info-item">5 BEDROOMS</li>
+									<li class="villa__info-item">5 UNITS</li>
+									<li class="villa__info-item">4,677.23 sq.ft</li>
+								</ul>
+								<img
+									class="villa__icon"
+									src="./assets/icons/arrow-right.svg"
+									width="28"
+									height="16"
+									alt=""
+									loading="lazy"
+								/>
+							</div>
+						</a>
+						<a class="villa__item" href="#">
+							<h2 class="villa__name">VERVE VILLA</h2>
+							<div class="villa__data">
+								<ul class="villa__info">
+									<li class="villa__info-item">
+										Private Swimming Pool, Elevator and Landscaped Garden
+									</li>
+									<li class="villa__info-item">5 BEDROOMS</li>
+									<li class="villa__info-item">5 UNITS</li>
+									<li class="villa__info-item">4,677.23 sq.ft</li>
+								</ul>
+								<img
+									class="villa__icon"
+									src="./assets/icons/arrow-right.svg"
+									width="28"
+									height="16"
+									alt=""
+									loading="lazy"
+								/>
+							</div>
+						</a>
+					</div>
+				</section>
+
+				<section class="inspired section container">
+					<div class="inspired__inner">
+						<div class="inspired__body">
+							<h2 class="inspired__title title">inspired by nature</h2>
+							<div class="inspired__description">
+								<p>
+									Selora Residences is not just about elegant living, it is a
+									vision for the future
+									<br />
+									Designed as a sustainable community, Selora nurtures the
+									growth of younger
+									<br />
+									generations by integrating nature at every level.
+								</p>
+							</div>
+							<button class="button" type="button" data-pop-up>
+								Register your interest
+							</button>
+						</div>
+						<img
+							class="inspired__image"
+							src="./assets/images/inspired.jpg"
+              srcset="./assets/images/inspired@2x.jpg 2x"
+							width="673"
+							height="321"
+							alt="Model of houses, with a house in the middle with a pool"
+							loading="lazy"
+						/>
+					</div>
+				</section>
+				<section class="amenities section container">
+					<header class="amenities__header">
+						<h2 class="amenities__title title">amenities</h2>
+					</header>
+					<ul class="amenities__items">
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/person-simple-swim.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">
+								Swimmable Laguna Mare
+							</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/club.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">
+								Casa Selora Clubhouse
+							</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/padel-court.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title"> Padel Court </strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/swimming-pool.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title"> Infinity Pool </strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/barbell.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Fitness Center</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/couch.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Lounge</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/potted-plant.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Lush Greenery</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/baby.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Kids Area</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/cigarette.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Cigar Lounge</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/person_simple-tai-chi.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Yoga Studio</strong>
+						</li>
+						<li class="amenities__item">
+							<img
+								class="amenities__item-icon"
+								src="./assets/icons/swimming-pool.svg"
+								width="24"
+								height="24"
+								alt=""
+								loading="lazy"
+							/>
+							<strong class="amenities__item-title">Kids Pool</strong>
+						</li>
+					</ul>
+					<button class="button" type="button" data-pop-up>
+						Register your interest
+					</button>
+				</section>
+				<section class="interest section container">
+					<div class="interest__inner">
+						<div class="interest__body">
+							<header class="interest__header">
+								<h2 class="title">POINTs OF INTEREST</h2>
+							</header>
+							<ol class="interest__list">
+								<li class="interest__item">
+									1Mohammed Bin Rashid Al Maktoum City
+								</li>
+								<li class="interest__item">Meydan Racecourse</li>
+								<li class="interest__item">Burj Khalifa</li>
+								<li class="interest__item">Burj Al Arab</li>
+								<li class="interest__item">Jumeirah Mosque</li>
+								<li class="interest__item">Palm Jumeirah</li>
+								<li class="interest__item">Kent College</li>
+								<li class="interest__item">World Islands</li>
+								<li class="interest__item">Emirates Towers</li>
+								<li class="interest__item">Dubai International Airport</li>
+								<li class="interest__item">
+									Dubai International Financial District
+								</li>
+								<li class="interest__item">Dubai Mall</li>
+								<li class="interest__item">Dubai Design District</li>
+								<li class="interest__item">
+									Lycee Libanais Francophone School
+								</li>
+							</ol>
+						</div>
+						<img
+							class="interest__image"
+							src="./assets/images/points-of-interest-map.jpg"
+              srcset="./assets/images/points-of-interest-map@2x.jpg 2x"
+							width="673"
+							height="760"
+							alt="Map of interesting places in Dubai marked with numbers"
+							loading="lazy"
+						/>
+					</div>
+				</section>
+				<section class="register-interests section container">
+					<div class="register-interests__inner">
+						<div class="register-interests__body">
+							<header class="register-interests__header">
+								<h2 class="title">register your interest</h2>
+							</header>
+							<div class="register-interests__description">
+								<p>
+									Don’t like the form? Leave a message via email
+									<br />
+									<a href="mailto:info@swankdevelopment.com">
+										info@swankdevelopment.com
+									</a>
+								</p>
+							</div>
+						</div>
+						<form class="register-interests__form register-interests-form">
+							<div class="register-interests-form__fields">
+								<div class="field">
+									<label
+										class="field__label visually-hidden"
+										for="register-interests-name"
+									>
+										Name
+									</label>
+									<input
+										class="field__input"
+										type="text"
+										placeholder="Name"
+										id="register-interests-name"
+									/>
+								</div>
+								<div class="field">
+									<label
+										class="field__label visually-hidden"
+										for="register-interests-email"
+									>
+										Email
+									</label>
+									<input
+										class="field__input"
+										type="email"
+										placeholder="Email"
+										id="register-interests-email"
+									/>
+								</div>
+								<div class="field">
+									<label
+										class="field__label visually-hidden"
+										for="register-interests-client-type"
+									>
+										Client type
+									</label>
+									<select
+										class="field__select"
+										id="register-interests-client-type"
+									>
+										<option disabled selected>Client type</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</div>
+								<div class="field">
+									<label
+										class="field__label visually-hidden"
+										for="register-interests-interested"
+									>
+										What property are you interested in?
+									</label>
+									<select
+										class="field__select"
+										id="register-interests-interested"
+									>
+										<option disabled selected>
+											What property are you interested in?
+										</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</div>
+								<div class="field">
+									<label
+										class="field__label visually-hidden"
+										for="register-interests-phone"
+									>
+										Phone
+									</label>
+									<input
+										class="field__input"
+										type="phone"
+										placeholder="Preferred calling number"
+										id="register-interests-phone"
+									/>
+								</div>
+							</div>
+							<button class="button" type="submit">send</button>
+						</form>
+					</div>
+				</section>
+				<div class="pop-up">
+					<div class="pop-up__body">
+						<button class="pop-up__button-close" type="button">
+							<img
+								src="./assets/icons/close.svg"
+								width="32"
+								height="32"
+								alt=""
+								loading="lazy"
+							/>
+						</button>
+						<div class="pop-up__blocks">
+							<nav class="menu-overlay pop-up__block-hidden">
+								<ul class="menu-overlay__list">
+									<li class="menu-overlay__item">
+										<a class="menu-overlay__item-link" href="#">
+											About the project
+										</a>
+									</li>
+									<li class="menu-overlay__item">
+										<a class="menu-overlay__item-link" href="#">amenities</a>
+									</li>
+									<li class="menu-overlay__item">
+										<a class="menu-overlay__item-link" href="#">
+											points of interest
+										</a>
+									</li>
+									<li class="menu-overlay__item">
+										<a class="menu-overlay__item-link" href="#">resgister</a>
+									</li>
+								</ul>
+							</nav>
+							<form class="register-interests-form pop-up__block-hidden">
+								<h2 class="title">register your interest</h2>
+								<div class="register-interests-form__fields">
+									<div class="field">
+										<label
+											class="field__label visually-hidden"
+											for="popup-register-interests-name"
+										>
+											Name
+										</label>
+										<input
+											class="field__input"
+											type="text"
+											placeholder="Name"
+											id="popup-register-interests-name"
+										/>
+									</div>
+									<div class="field">
+										<label
+											class="field__label visually-hidden"
+											for="popup-register-interests-email"
+										>
+											Email
+										</label>
+										<input
+											class="field__input"
+											type="email"
+											placeholder="Email"
+											id="popup-register-interests-email"
+										/>
+									</div>
+									<div class="field">
+										<label
+											class="field__label visually-hidden"
+											for="popup-register-interests-client-type"
+										>
+											Client type
+										</label>
+										<select
+											class="field__select"
+											id="popup-register-interests-client-type"
+										>
+											<option disabled selected>Client type</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+									</div>
+									<div class="field">
+										<label
+											class="field__label visually-hidden"
+											for="popup-register-interests-interested"
+										>
+											What property are you interested in?
+										</label>
+										<select
+											class="field__select"
+											id="popup-register-interests-interested"
+										>
+											<option disabled selected>
+												What property are you interested in?
+											</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+									</div>
+									<div class="field">
+										<label
+											class="field__label visually-hidden"
+											for="popup-register-interests-phone"
+										>
+											Phone
+										</label>
+										<input
+											class="field__input"
+											type="phone"
+											placeholder="Preferred calling number"
+											id="popup-register-interests-phone"
+										/>
+									</div>
+								</div>
+								<button class="button" type="submit">request a call</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__inner container">
+					<a class="logo" href="#">
+						<img
+							src="./assets/images/logo.svg"
+							width="444"
+							height="165"
+							alt="White company logo selora"
+							loading="lazy"
+						/>
+					</a>
+					<div class="footer__body">
+						<div class="footer__top">
+							<div class="footer__info">
+								<strong class="footer__info-title">Contact</strong>
+								<address class="footer__info-address">
+									<a href="mailto:info@swankdevelopment.com">
+										info@swankdevelopment.com
+									</a>
+									<br />
+									<br />
+									800 SWANK (79265)
+									<br />
+									<br />
+									Suite 2005, Festival Tower, Dubai Festival City, Dubai, UAE
+								</address>
+							</div>
+							<ul class="soc1al">
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Facebook</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/facebook.svg"
+											width="23"
+											height="23"
+											alt="Facebook"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Instagram</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/instagram.svg"
+											width="23"
+											height="23"
+											alt="Instagram"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Youtube</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/youtube.svg"
+											width="23"
+											height="23"
+											alt="Youtube"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Linkedin</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/linkedin.svg"
+											width="23"
+											height="23"
+											alt="Linkedin"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Tiktok</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/tiktok.svg"
+											width="23"
+											height="23"
+											alt="Tiktok"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Threads</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/threads.svg"
+											width="23"
+											height="23"
+											alt="Threads"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Whatsapp</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/whatsapp.svg"
+											width="23"
+											height="23"
+											alt="Whatsapp"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+								<li class="soc1al__item">
+									<a class="soc1al__link" href="#" target="_blank">
+										<span class="visually-hidden">Chat</span>
+										<img
+											class="soc1al__link-icon"
+											src="./assets/icons/chat.svg"
+											width="23"
+											height="23"
+											alt="Chat"
+											loading="lazy"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<p class="footer__copyright">
+							© <time datetime="2024">2024</time> SWAK DEVELOPMENT. All Rights
+							Reserved.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
+		<script src="/assets/js/main.js"></script>
+	</body>
+</html>
