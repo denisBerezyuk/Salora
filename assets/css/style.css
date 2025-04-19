@@ -128,10 +128,12 @@ button {
 }
 
 :is(.field__input, .field__select) {
+	background-color: transparent;
 	height: 47px;
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid var(--color-black);
+	border-radius: 0;
 }
 
 :is(.field__input, .field__input::placeholder, .field__select) {
