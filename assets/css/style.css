@@ -407,11 +407,13 @@ button {
 }
 
 .villa__icon {
+	will-change: rotate, translate, scale;
 	transition: rotate var(--duration-action), translate var(--duration-action),
 		scale var(--duration-action);
 }
 
 .villa__item-body {
+	will-change: opacity, scale, height, padding-block;
 	overflow: hidden;
 	opacity: 0;
 	scale: 0.75;
