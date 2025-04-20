@@ -103,7 +103,7 @@ villaAccordionActiveItems.forEach(item => {
 		item.classList.remove('villa__item-no--animation');
 	}, 100);
 
-	body.style.height = `${body.scrollHeight}px`;
+	body.style.height = `${body.scrollHeight + 72}px`;
 });
 
 let prevWidth = window.innerWidth;
@@ -113,6 +113,10 @@ function onResizeAccordionItem() {
 
 	if (currentWidth !== prevWidth) {
 		prevWidth = currentWidth;
+
+		const villaAccordionActiveItems = document.querySelectorAll(
+			'.villa__item--active'
+		);
 
 		villaAccordionActiveItems.forEach(item => {
 			const body = item.querySelector('.villa__item-body');
@@ -132,7 +136,7 @@ function onToggleAccordionItem(event) {
 		if (body.style.height) {
 			body.style.height = '';
 		} else {
-			body.style.height = `${body.scrollHeight}px`;
+			body.style.height = `${body.scrollHeight + 72}px`;
 		}
 
 		item.classList.toggle('villa__item--active');
