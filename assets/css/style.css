@@ -91,6 +91,14 @@ input::-webkit-inner-spin-button {
 	overflow: hidden !important;
 }
 
+.link-whatsapp {
+	position: fixed;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	transition: scale var(--duration);
+}
+
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -667,7 +675,7 @@ input::-webkit-inner-spin-button {
 		width: 100%;
 	}
 
-	:is(.button, .villa__slider-button):hover {
+	:is(.button, .villa__slider-button, .link-whatsapp):hover {
 		scale: 1.05;
 	}
 
@@ -689,7 +697,7 @@ input::-webkit-inner-spin-button {
 		width: 100%;
 	}
 
-	:is(.button, .villa__slider-button):active {
+	:is(.button, .villa__slider-button, .link-whatsapp):active {
 		scale: 1.05;
 	}
 
