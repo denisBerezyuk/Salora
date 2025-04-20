@@ -380,8 +380,6 @@ button {
 
 .villa__item.villa__item--active .villa__item-body {
 	padding-block: 40px 16px;
-	opacity: 1;
-	scale: 1;
 }
 
 .villa__item.villa__item--active .villa__item-top .villa__icon {
@@ -414,12 +412,10 @@ button {
 
 .villa__item-body {
 	backface-visibility: hidden;
-	will-change: opacity, scale, height, padding-block;
+	will-change: height, padding-block;
 	overflow: hidden;
-	scale: 0.75;
-	opacity: 1;
 	height: 0;
-	transition: all var(--duration-action), opacity var(--duration-action);
+	transition: all var(--duration-action);
 }
 
 .villa__name {
