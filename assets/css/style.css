@@ -460,6 +460,10 @@ input::-webkit-inner-spin-button {
 	max-width: 146px;
 }
 
+.villa__info-item--uppercase {
+	text-transform: uppercase;
+}
+
 .villa__slider {
 	margin-bottom: 32px;
 }
