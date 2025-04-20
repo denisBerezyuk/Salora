@@ -663,11 +663,6 @@ button {
 		font-size: 18px;
 	}
 
-	.footer .logo img {
-		max-width: 358px;
-		width: 100%;
-	}
-
 	.villa__info {
 		column-gap: 20px;
 	}
