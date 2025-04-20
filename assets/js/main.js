@@ -20,9 +20,9 @@ new Swiper('.villa__slider', {
 const buttonsForPopUpOpen = document.querySelectorAll('.button[data-pop-up]'),
 	buttonBurgerMenu = document.querySelector('.header__button-burger'),
 	popUp = document.querySelector('.pop-up'),
-	menuOverlay = popUp.querySelector('.menu-overlay'),
-	registerYourInterestForm = popUp.querySelector('.register-interests-form'),
-	popUpButtonClose = document.querySelector('.pop-up__button-close');
+	menuOverlay = popUp.querySelector('.menu-overlay');
+(registerYourInterestForm = popUp.querySelector('.register-interests-form')),
+	(popUpButtonClose = document.querySelector('.pop-up__button-close'));
 
 function onClosingBlocksPopUp() {
 	const blocks = popUp.querySelectorAll('.pop-up__blocks > *');
@@ -70,6 +70,12 @@ function onOpenPopUpMobileOverlay(event) {
 	menuOverlay.classList.remove('pop-up__block-hidden');
 }
 
+function onMenuOverlayAnchorLinks(event) {
+	if (event.target.closest('a[href^="#"]')) {
+		onClosePopUp();
+	}
+}
+
 buttonsForPopUpOpen.forEach(button => {
 	button.addEventListener('click', onOpenPopUpRegisterYourInterestForm);
 });
@@ -78,9 +84,43 @@ buttonBurgerMenu.addEventListener('click', onOpenPopUpMobileOverlay);
 
 popUpButtonClose.addEventListener('click', onClosePopUp);
 
+menuOverlay.addEventListener('click', onMenuOverlayAnchorLinks);
+
 document.addEventListener('click', onClosingPopUpWithoutClick);
 
-const villaAccordionItems = document.querySelector('.villa__items');
+const villaAccordionBoxItems = document.querySelector('.villa__items');
+const villaAccordionItems = document.querySelectorAll('.villa__item');
+const villaAccordionActiveItems = document.querySelectorAll(
+	'.villa__item--active'
+);
+
+villaAccordionActiveItems.forEach(item => {
+	const body = item.querySelector('.villa__item-body');
+
+	item.classList.add('villa__item-no--animation');
+
+	setTimeout(() => {
+		item.classList.remove('villa__item-no--animation');
+	}, 100);
+
+	body.style.height = `${body.scrollHeight + 72}px`;
+});
+
+function onResizeAccordionItem() {
+	villaAccordionActiveItems.forEach(item => {
+		const body = item.querySelector('.villa__item-body');
+
+		body.style.transition = 'none';
+
+		body.style.height = '';
+		const height = body.scrollHeight;
+		body.style.height = `${height}px`;
+
+		requestAnimationFrame(() => {
+			body.style.transition = '';
+		});
+	});
+}
 
 function onToggleAccordionItem(event) {
 	if (event.target.closest('.villa__item-top')) {
@@ -90,11 +130,13 @@ function onToggleAccordionItem(event) {
 		if (body.style.height) {
 			body.style.height = '';
 		} else {
-			body.style.height = `${body.scrollHeight + 56}px`;
+			body.style.height = `${body.scrollHeight + 72}px`;
 		}
 
 		item.classList.toggle('villa__item--active');
 	}
 }
 
-villaAccordionItems.addEventListener('click', onToggleAccordionItem);
+window.addEventListener('resize', onResizeAccordionItem);
+
+villaAccordionBoxItems.addEventListener('click', onToggleAccordionItem);

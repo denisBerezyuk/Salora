@@ -27,6 +27,10 @@
 	--section-spacing-y: 120px;
 }
 
+:target {
+	scroll-margin-top: 90px;
+}
+
 body {
 	font-family: var(--font-family-base);
 	font-size: 14px;
@@ -378,13 +382,17 @@ button {
 	padding-top: 60px;
 }
 
-.villa__item.villa__item--active .villa__item-body {
-	padding-block: 40px 16px;
+.villa__item-no--animation :where(.villa__icon, .villa__item-body) {
+	transition: none !important;
 }
 
 .villa__item.villa__item--active .villa__item-top .villa__icon {
 	rotate: 90deg;
 	translate: 6px 6px;
+}
+
+.villa__item.villa__item--active .villa__item-body {
+	padding-block: 40px 32px;
 }
 
 .villa__item-info {
