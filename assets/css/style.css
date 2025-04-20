@@ -413,12 +413,13 @@ button {
 }
 
 .villa__item-body {
+	backface-visibility: hidden;
 	will-change: opacity, scale, height, padding-block;
 	overflow: hidden;
-	opacity: 0;
 	scale: 0.75;
+	opacity: 1;
 	height: 0;
-	transition: all var(--duration-action);
+	transition: all var(--duration-action), opacity var(--duration-action);
 }
 
 .villa__name {
@@ -711,9 +712,11 @@ button {
 	}
 
 	.villa__image {
+		display: block;
 		width: 100%;
 		object-fit: cover;
 		transform: translateZ(0);
+		backface-visibility: hidden;
 		will-change: scale, height;
 	}
 
