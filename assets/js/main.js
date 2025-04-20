@@ -103,7 +103,7 @@ villaAccordionActiveItems.forEach(item => {
 		item.classList.remove('villa__item-no--animation');
 	}, 100);
 
-	body.style.height = `${body.scrollHeight + 72}px`;
+	body.style.height = 'auto';
 });
 
 let prevWidth = window.innerWidth;
