@@ -63,6 +63,15 @@ button {
 	box-shadow: 0 0 0 3px rgba(127, 160, 125, 0.4);
 }
 
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
 .container {
 	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
 	padding-inline: var(--container-padding-x);
