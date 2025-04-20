@@ -416,8 +416,7 @@ button {
 	opacity: 0;
 	scale: 0.75;
 	height: 0;
-	transition: opacity var(--duration-action), height var(--duration-action),
-		padding-block var(--duration-action), scale var(--duration-action);
+	transition: all var(--duration-action);
 }
 
 .villa__name {
