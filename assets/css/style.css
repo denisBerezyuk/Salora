@@ -59,10 +59,6 @@ button {
 	outline: none;
 }
 
-:is(button, select, input, textarea, a):focus-visible {
-	box-shadow: 0 0 0 3px rgba(127, 160, 125, 0.4);
-}
-
 input[type='number'] {
 	-moz-appearance: textfield;
 }
