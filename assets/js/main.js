@@ -106,14 +106,22 @@ villaAccordionActiveItems.forEach(item => {
 	body.style.height = `${body.scrollHeight}px`;
 });
 
-function onResizeAccordionItem() {
-	villaAccordionActiveItems.forEach(item => {
-		const body = item.querySelector('.villa__item-body');
+let prevWidth = window.innerWidth;
 
-		body.style.height = 'auto';
-		const height = body.scrollHeight;
-		body.style.height = `${height}px`;
-	});
+function onResizeAccordionItem() {
+	const currentWidth = window.innerWidth;
+
+	if (currentWidth !== prevWidth) {
+		prevWidth = currentWidth;
+
+		villaAccordionActiveItems.forEach(item => {
+			const body = item.querySelector('.villa__item-body');
+
+			body.style.height = 'auto';
+			const height = body.scrollHeight;
+			body.style.height = `${height}px`;
+		});
+	}
 }
 
 function onToggleAccordionItem(event) {
