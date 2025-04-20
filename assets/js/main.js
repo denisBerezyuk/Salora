@@ -103,22 +103,16 @@ villaAccordionActiveItems.forEach(item => {
 		item.classList.remove('villa__item-no--animation');
 	}, 100);
 
-	body.style.height = `${body.scrollHeight + 72}px`;
+	body.style.height = `${body.scrollHeight}px`;
 });
 
 function onResizeAccordionItem() {
 	villaAccordionActiveItems.forEach(item => {
 		const body = item.querySelector('.villa__item-body');
 
-		body.style.transition = 'none';
-
-		body.style.height = '';
+		body.style.height = 'auto';
 		const height = body.scrollHeight;
 		body.style.height = `${height}px`;
-
-		requestAnimationFrame(() => {
-			body.style.transition = '';
-		});
 	});
 }
 
@@ -130,7 +124,7 @@ function onToggleAccordionItem(event) {
 		if (body.style.height) {
 			body.style.height = '';
 		} else {
-			body.style.height = `${body.scrollHeight + 72}px`;
+			body.style.height = `${body.scrollHeight}px`;
 		}
 
 		item.classList.toggle('villa__item--active');
