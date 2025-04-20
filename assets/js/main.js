@@ -18,11 +18,11 @@ new Swiper('.villa__slider', {
 });
 
 const buttonsForPopUpOpen = document.querySelectorAll('.button[data-pop-up]'),
-	buttonBurgerMenu = document.querySelector('.header__button-burger');
-(popUp = document.querySelector('.pop-up')),
-	(menuOverlay = popUp.querySelector('.menu-overlay')),
-	(registerYourInterestForm = popUp.querySelector('.register-interests-form')),
-	(popUpButtonClose = document.querySelector('.pop-up__button-close'));
+	buttonBurgerMenu = document.querySelector('.header__button-burger'),
+	popUp = document.querySelector('.pop-up'),
+	menuOverlay = popUp.querySelector('.menu-overlay'),
+	registerYourInterestForm = popUp.querySelector('.register-interests-form'),
+	popUpButtonClose = document.querySelector('.pop-up__button-close');
 
 function onClosingBlocksPopUp() {
 	const blocks = popUp.querySelectorAll('.pop-up__blocks > *');
@@ -79,3 +79,22 @@ buttonBurgerMenu.addEventListener('click', onOpenPopUpMobileOverlay);
 popUpButtonClose.addEventListener('click', onClosePopUp);
 
 document.addEventListener('click', onClosingPopUpWithoutClick);
+
+const villaAccordionItems = document.querySelector('.villa__items');
+
+function onToggleAccordionItem(event) {
+	if (event.target.closest('.villa__item-top')) {
+		const item = event.target.closest('.villa__item');
+		const body = item.querySelector('.villa__item-body');
+
+		if (body.style.height) {
+			body.style.height = '';
+		} else {
+			body.style.height = `${body.scrollHeight + 56}px`;
+		}
+
+		item.classList.toggle('villa__item--active');
+	}
+}
+
+villaAccordionItems.addEventListener('click', onToggleAccordionItem);

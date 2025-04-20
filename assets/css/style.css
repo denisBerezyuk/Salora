@@ -17,6 +17,7 @@
 	--color-cream: #e9e4d9;
 
 	--duration: 0.2s ease-in-out;
+	--duration-action: 0.3s ease-in-out;
 
 	--container-width: 1360px;
 	--container-padding-x: 16px;
@@ -372,20 +373,51 @@ button {
 	flex-shrink: 0;
 }
 
-.villa__header {
-	margin-bottom: 32px;
+.villa__item:not(:first-child) {
+	border-top: 1px solid var(--color-cream);
+	padding-top: 60px;
+}
+
+.villa__item.villa__item--active .villa__item-body {
+	padding-block: 40px 16px;
+	opacity: 1;
+	scale: 1;
+}
+
+.villa__item.villa__item--active .villa__item-top .villa__icon {
+	rotate: 90deg;
+	translate: 6px 6px;
 }
 
 .villa__item-info {
 	margin-bottom: 40px;
 }
 
-.villa__item {
+.villa__item:last-child {
+	border-bottom: 1px solid var(--color-cream);
+}
+
+.villa__item-top {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	text-decoration: none;
 	column-gap: 60px;
+	padding-bottom: 24px;
+	cursor: pointer;
+}
+
+.villa__icon {
+	transition: rotate var(--duration-action), translate var(--duration-action),
+		scale var(--duration-action);
+}
+
+.villa__item-body {
+	overflow: hidden;
+	opacity: 0;
+	scale: 0.75;
+	height: 0;
+	transition: opacity var(--duration-action), height var(--duration-action),
+		padding-block var(--duration-action), scale var(--duration-action);
 }
 
 .villa__name {
@@ -448,15 +480,6 @@ button {
 	max-width: 673px;
 	width: 100%;
 	margin-left: auto;
-}
-
-.villa__items .villa__item {
-	border-top: 1px solid var(--color-cream);
-	padding-block: 60px 24px;
-}
-
-.villa__items .villa__item:last-child {
-	border-bottom: 1px solid var(--color-cream);
 }
 
 .inspired__inner {
@@ -627,6 +650,10 @@ button {
 	:is(.button, .villa__slider-button):hover {
 		scale: 1.05;
 	}
+
+	.villa__item-top:hover .villa__icon {
+		scale: 1.1;
+	}
 }
 
 @media (hover: none) {
@@ -644,6 +671,10 @@ button {
 
 	:is(.button, .villa__slider-button):active {
 		scale: 1.05;
+	}
+
+	.villa__item-top:active .villa__icon {
+		scale: 1.1;
 	}
 }
 
@@ -858,10 +889,6 @@ button {
 		margin-bottom: 32px;
 	}
 
-	.villa__item {
-		column-gap: 30px;
-	}
-
 	:is(.villa__data, .villa__actions) {
 		max-width: 330px;
 	}
@@ -870,7 +897,8 @@ button {
 		max-width: none;
 	}
 
-	.villa__item {
+	.villa__item-top {
+		column-gap: 30px;
 		flex-wrap: wrap;
 		gap: 32px;
 	}
