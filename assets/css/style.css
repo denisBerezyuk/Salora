@@ -713,6 +713,8 @@ button {
 	.villa__image {
 		width: 100%;
 		object-fit: cover;
+		transform: translateZ(0);
+		will-change: scale, height;
 	}
 
 	.villa__slider-button {
